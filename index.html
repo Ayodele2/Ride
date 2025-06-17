@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ride Now</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <video autoplay muted loop id="bgVideo">
+      <source src="/assets/mixkit-highway-in-the-middle-of-a-mountain-range-4633-hd-ready (1).mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <nav>
+      <div class="logo">Pdelite</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#book">Book</a></li>
+        <li><a href="#about">about</a></li>
+      </ul>
+    </nav>
+
+    <div class="landing-content">
+      <h1>Book Your Ride Instantly</h1>
+      <p>Fast, Safe, Reliable</p>
+      <a href="#book" class="cta-button">Book Now</a>
+    </div>
+  </header>
+
+  <section id="book" class="booking-section">
+    <h2>Book a Ride</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="text" placeholder="Pickup Location" required />
+      <input type="text" placeholder="Drop-off Location" required />
+      <input type="datetime-local" required />
+      <button type="submit">Confirm Booking</button>
+    </form>
+    <div id="confirmationMsg"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
